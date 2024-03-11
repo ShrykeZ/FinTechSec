@@ -9,7 +9,7 @@ database_url = 'testdb1.yo'
 engine = create_engine(database_url)
 
 # SQL query to fetch relevant data
-query = '' # Redacted
+query = 'SELECT amount, merchant, transaction_type, is_fraud FROM transactions;' # Example based on my test DB.
 df = pd.read_sql(query, engine)
 
 # Dataset columns 'c1', 'c2', ..., 'target'
